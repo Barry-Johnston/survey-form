@@ -1,0 +1,69 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <title>Audiobook Survey</title>
+  </head>
+  <body>
+    <img id="img1"src="./img/headphones.jpg" alt="headphones" height="544px" width="725px">
+
+      <h1 id="title">Audiobook Survey</h1>
+        <p id="description">How much have you grown?</p>
+      <form id="survey-form" action="index.html" method="post">
+      <label id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      <label id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      <label id="number-label">Number:</label>
+        <input type="number" id="number" placeholder="Enter your number" required min="10" max="10">
+      <label id="dropdownlabel"for="Status">Which option best represents your learning status?</label>
+      <select id="dropdown" name="status">
+        <option value="">Fresh Ears</option>
+        <option value="">Close Minded</option>
+        <option value="">Lifetime Student</option>
+      </select>
+      <label id="radiolabel"for="books">Would you agree that reading books is important?</label>
+      <span class="radiocontainer">
+        <label for="books1">Word</label>
+          <input type="radio" name="books" value="Word">
+        <label for="books2">Nah</label>
+          <input type="radio" name="books" value="Nah">
+        <label for="books3">Meh</label>
+          <input type="radio" name="books" value="Meh">
+      </span>
+      <label for="catagories" id="catagories-label">Catagories of interest (Pick all that tickle):</label>
+      <span class="checkboxcontainer">
+        <label for="cat1" id="checkbox-label">Self Devlopment</label>
+          <input type="checkbox" name="cat1" value="Self Devlopment">
+        <label for="cat2" id="checkbox-label">Business</label>
+          <input type="checkbox" name="cat2" value="Business">
+        <label for="cat3" id="checkbox-label">History</label>
+          <input type="checkbox" name="cat3" value="history">
+        <label for="cat4" id="checkbox-label">Science</label>
+          <input type="checkbox" name="cat4" value="Science">
+        <label for="cat5" id="checkbox-label">Religion</label>
+          <input type="checkbox" name="cat5" value="Religion">
+        <label for="cat6" id="checkbox-label">Nonfiction</label>
+          <input type="checkbox" name="cat6" value="Nonfiction">
+        <label for="cat7" id="checkbox-label">Fiction</label>
+          <input type="checkbox" name="cat4" value="fiction">
+        <label for="cat8" id="checkbox-label">Heath</label>
+          <input type="checkbox" name="cat8" value="Health">
+        <label for="cat9" id="checkbox-label">Romance</label>
+          <input type="checkbox" name="cat9" value="Romance">
+        <label for="cat10" id="checkbox-label">Arts</label>
+          <input type="checkbox" name="cat10" value="Arts">
+        <label for="cat11" id="checkbox-label">Lectures</label>
+        <input type="checkbox" name="cat11" value="Lectures">
+      </span>
+      <label id="preach"for="Preach">Preach:</label>
+        <textarea name="Preach" rows="8" cols="80">Space provided for rant. 200 character limit</textarea>
+      <button id="submit" type="submit" name="Submit">Submit</button>
+    </form>
+  </body>
+</html>

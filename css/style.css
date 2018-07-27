@@ -1,0 +1,135 @@
+#img1 {
+  box-shadow: 5px 10px 8px #000000;
+  float: left;
+}
+body {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  background-size: cover;
+}
+h1, p {
+  text-align: center;
+  font-size: 3em;
+}
+form {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-gap: 15px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 25px;
+  font-size: 1.7em;
+  margin: 0px;
+  color: white;
+  box-shadow: 5px 10px;
+}
+input {
+  grid-column: 2 / 3;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #000000;
+
+
+}
+label {
+  grid-column: 1 / 2;
+  background-color: rgba(6, 45, 35, 0.7);
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #000000;
+  padding: 5px;
+}
+
+/* books dropdown */
+
+#dropdown{
+  font-size: 35px;
+  box-shadow: 5px 10px 8px #000000;
+  border-radius: 10px;
+  padding-left: 80px;
+  height: 50px;
+
+}
+
+/* radiocontainer */
+
+.radiocontainer {
+  display: grid;
+  grid-template-columns: 50px 160px;
+  grid-auto-flow: dense;
+  /* grid-row-gap: 10px; */
+  align-items: flex-start;
+}
+.radiocontainer input {
+    grid-column: 1;
+  }
+  .radiocontainer label {
+    grid-column: 2;
+    padding: 5px;
+    font-size: 35px;
+
+  }
+  input[type="radio"] {
+    box-shadow: none;
+    width: 1em;
+    height: 1em;
+  }
+
+  /* catagories checkbox */
+
+#catagories-label {
+  padding: 20px;
+  align-self: flex-start;
+
+  }
+.checkboxcontainer {
+  display: grid;
+  grid-template-columns: 50px 300px;
+  grid-auto-flow: dense;
+  grid-row-gap: 15px;
+  padding: 10px;
+}
+.checkboxcontainer label {
+  grid-column: 2;
+  text-align: left;
+  font-size: 35px;
+}
+.checkboxcontainer input {
+  grid-column: 1;
+}
+input[type="checkbox"] {
+  box-shadow: none;
+  width: 1em;
+  height: 1em;
+
+}
+/* Preach textarea */
+
+textarea {
+  grid-column: 2 /3;
+  box-shadow: 5px 10px 8px #000000;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#preach {
+  height: 80px;
+  align-self: flex-start;
+  padding-top: 40px;
+}
+/* submit  */
+
+
+#submit {
+  padding: 15px 30px;
+  background-color: #A54900;
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  box-shadow: 5px 10px 8px #000000;
+  color: white;
+  height: 100px;
+}
